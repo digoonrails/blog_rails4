@@ -19,7 +19,7 @@
   <%#= attachment_uploader(@article, :photos, :image) %>
   <%= attachment_loader(@article, :photos) %>
 
-
+  <input id="fileupload" type="file" name="file" data-url="/upload?model=Article&relation=photos&id=<%= @article.id %>" data-relation="photos" data-id="<%= @article.id %>" multiple>
 
   <hr></hr>
 
@@ -31,5 +31,5 @@
 
 <hr></hr>
 
-<input id="fileupload" type="file" name="file" data-url="/upload?model=Article&relation=photos&id=<%= @article.id %>" data-relation="photos" data-id="<%= @article.id %>" multiple>
+
 
